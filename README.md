@@ -4,6 +4,13 @@ This is to learn using firebase's auth !
 
 # Steps to success
 
+1. Create a new project in firebase.google.com
+2. Go into authentication tab inside your newly created project
+3. Under the `Sign-in Method` tab:
+  - Enable the `Email/Password` provider
+
+---
+
 1. We need to download the firebase npm module
   - `yarn add firebase`
 2. Create a config folder inside the `src` folder
