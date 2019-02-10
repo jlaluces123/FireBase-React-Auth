@@ -18,12 +18,15 @@ class Login extends React.Component {
   handleLogin = (e) => {
     e.preventDefault();
     fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password) // NOTE: this is a promise
-      .then(user => {
-        console.log(user);
-      })
-      .catch(err => {
-        console.log(err);
-      })
+      .then(user => { console.log(user) })
+      .catch(err => { console.log(err) });
+  }
+
+  handleSignup = (e) => {
+    e.preventDefault();
+    fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
+      .then(user => { console.log(user) })
+      .catch(err => { console.log(err) });
   }
 
   render() {
